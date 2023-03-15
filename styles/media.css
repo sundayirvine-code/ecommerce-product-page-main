@@ -183,29 +183,32 @@
     }
 
     .price {
-        grid-column: 6/7;
+        grid-column: 4/6;
         grid-row: 4/5;
     }
 
     .percent {
         width: 70px;
-        grid-column: 7/8;
+        grid-column: 7/9;
         grid-row: 4/5;
         justify-self: center;
         text-align: center;
     }
 
     .prev-price {
-        grid-column: 8/9;
+        grid-column: 10/12;
         grid-row: 4/5;
         align-self: center;
         width: 70px;
-        text-align: center;
+        justify-self: end;
+
     }
 
     .signs {
-        grid-column: 6/9;
+        grid-column: 4/12;
         grid-row: 5/6;
+        height: 60px;
+        align-self: center;
     }
 
     .qty-icons {
@@ -213,23 +216,22 @@
     }
 
     .minus {
-        grid-column:6/7;
-        grid-row: 5/6;
+        grid-column:4/6;
+
     }
 
     .plus {
-        grid-column: 7/8;
-        grid-row: 5/6;
+        grid-column: 10/12;
     }
 
     .qty {
-        grid-column: 8/9;
+        grid-column: 7/9;
         grid-row: 5/6;;
     }
     
     .add-to-cart {
-        grid-column: 5/10;
-        grid-row: 6/8;
+        grid-column: 4/12;
+        grid-row: 6/7;
         height: 55px;
         align-self: center;
     }
