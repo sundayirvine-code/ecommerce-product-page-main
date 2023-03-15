@@ -3,7 +3,7 @@
 body{
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
+    height: 800px;
     margin: 0 auto;
     display: grid;
     justify-items: center;
@@ -11,7 +11,7 @@ body{
 .main{
     display: grid;
     grid-template-columns: 550px 550px;
-    grid-template-rows: 80px 40px 550px 40px 20px;
+    grid-template-rows: 80px 20px 600px 20px 40px;
     height: 100%;
     background-color: #ffffff;
     font-family: 'Kumbh Sans', sans-serif;
