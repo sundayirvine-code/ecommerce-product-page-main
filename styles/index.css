@@ -63,7 +63,23 @@ body{
 }
 
 .collections{
+    grid-column: 7/8;
+}
+
+.men{
+    grid-column: 8/9;
+}
+
+.women{
     grid-column: 9/10;
+}
+
+.about{
+    grid-column: 10/11;
+}
+
+.contact{
+    grid-column: 11/12;
 }
 
 .cart{

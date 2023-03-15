@@ -1,0 +1,51 @@
+@media screen and (max-width: 1150px){
+    .main{
+        grid-template-columns: 450px 450px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .main{
+        grid-template-columns: 400px 400px;
+    }
+}
+
+/*tablet view*/
+@media screen and (max-width: 850px){
+    .main{
+        grid-template-columns: 400px 350px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        grid-template-columns: 350px 350px;
+    }
+
+    .collections{
+        grid-column: 9/10;
+    }
+    
+    .men{
+        grid-column: 10/11;
+    }
+    
+    .women{
+        grid-column: 11/12;
+    }
+    
+    .about{
+        grid-column: 12/13;
+    }
+    
+    .contact{
+        grid-column: 13/14;
+    }
+}
+
+/*mobile view*/
+@media screen and (max-width: 750px){
+    .main{
+        grid-template-columns: 400px 350px;
+    }
+}
