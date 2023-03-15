@@ -44,8 +44,6 @@
 }
 
 /*mobile view*/
-@media screen and (max-width: 750px){
-    .main{
-        grid-template-columns: 400px 350px;
-    }
+@media screen and (max-width: 768px){
+    
 }
