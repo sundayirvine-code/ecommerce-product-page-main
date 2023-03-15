@@ -3,42 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://kit.fontawesome.com/c82ebbdf53.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/lightbox.css">
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="main">
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <header class="header">
+      <img src="/images/logo.svg" alt="Sneakers Logo" class="logo">
+      <div class="nav-item collections">Collections</div>
+      <div class="nav-item men">Men</div>
+      <div class="nav-item women">Women</div>
+      <div class="nav-item about">About</div>
+      <div class="nav-item contact">Contact</div>
+      <img src="/images/icon-cart.svg" alt="Cart Icon" class="cart">
+      <div class="notify"></div>
+      <img src="/images/image-avatar.png" alt="User avatar" class="avatar">
+    </header>
 
-  Sneaker Company
+    <div class="cart-popup">
+      <div class="cart-title">Cart</div>
+      <div class="empty">Your Cart is Empty</div>
+      <div class="cart-image"></div>
+      <div class="product-title">Fall Limited Edition Sneakers</div>
+      <div class="price-calculation">
+        <span class="cart-price">$125.00</span>
+        <span class="multiply">x</span>
+        <span class="cart-qty"></span>
+        <span class="cart-total"></span>
+        <img src="/images/icon-delete.svg" alt="Delete Icon" class="del-icon">
+      </div>
+      <button class="checkout">Checkout</button>
+    </div>
 
-  Fall Limited Edition Sneakers
+    <div class="light-box">
+      <img src="/images/icon-close.svg" alt="Close Icon" class="close-lightbox">
+      <img src="/images/icon-next.svg" alt="Next Icon" class="icon-next l-icon">
+      <img src="/images/icon-previous.svg" alt="Previous Icon" class="icon-previous l-icon">
+      <div class="light-img"></div>
+      <div class="thumb t1"></div>
+      <div class="thumb t2"></div>
+      <div class="thumb t3"></div>
+      <div class="thumb t4"></div>
+    </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+    <aside class="aside-image">
+      <div class="img"></div>
+      <div class="thumbnail thumb1"></div>
+      <div class="thumbnail thumb2"></div>
+      <div class="thumbnail thumb3"></div>
+      <div class="thumbnail thumb4"></div>
+    </aside>
 
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <aside class="aside">
+      <div class="small-title">Sneaker Company</div>
+      <div class="big-title">Fall Limited Edition Sneakers</div>
+      <div class="text">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</div>
+      <div class="price">$125.00</div>
+      <div class="percent">50%</div>
+      <div class="prev-price">$250.00</div> 
+      <img src="/images/icon-minus.svg" alt="Minus Icon" class="minus qty-icons">
+      <div class="qty">0</div>
+      <img src="/images/icon-plus.svg" alt="Plus Icon" class="plus qty-icons">
+      <button class="add-to-cart">
+        <img src="/images/icon-cart2.svg" alt="Cart Icon">
+        <span>Add to cart</span>
+      </button> 
+      <div class="signs"></div>
+    </aside>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </main>
+  <script src="/scripts/index.js"></script>
+  <script src="/scripts/lightbox.js"></script>
 </body>
 </html>
