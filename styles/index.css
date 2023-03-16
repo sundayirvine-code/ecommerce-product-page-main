@@ -10,7 +10,7 @@ body{
 .main{
     display: grid;
     grid-template-columns: 550px 550px;
-    grid-template-rows: 80px 20px 600px 20px 40px;
+    grid-template-rows: 80px 20px 600px 20px;
     height: 100%;
     background-color: #ffffff;
     font-family: 'Kumbh Sans', sans-serif;
