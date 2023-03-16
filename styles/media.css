@@ -45,11 +45,14 @@
 
 /*tab view*/
 @media screen and (max-width: 768px){
+    body{
+        overflow-y: scroll;
+    }
     .main{
         display: grid;
         width: 98vw;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 80px 20px 400px auto auto;
+        grid-template-rows: 80px 20px 400px auto 20px;
         column-gap: 0;
         row-gap: 0;
     }
@@ -161,6 +164,7 @@
         width: 98%;
         display: grid;
         grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         
     }
 
@@ -192,7 +196,7 @@
         grid-column: 7/9;
         grid-row: 4/5;
         justify-self: center;
-        text-align: center;
+        text-align: end;
     }
 
     .prev-price {
@@ -253,17 +257,58 @@
 @media screen and (max-width: 645px){
     .menu{
         display: block;
+    }
+    .menu, .close-menu{  
         cursor: pointer;
         grid-row: 1/2;
-        grid-column: 2/4;
+        grid-column: 4;
+        z-index: 7;
     }
+
+    .mobile-menu{
+        display: block;
+        z-index: 8;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-template-rows: repeat(24, 1fr);
+    }
+
+    .mobile-item{
+        grid-column: 2/3;
+        font-size: 18px;
+        color: #1e1f23;
+        font-weight: 700;
+    }
+
+    .mob1{
+        grid-row: 1/2;
+    }
+
+    .mob2{
+        grid-row: 3/4;
+    }
+
+    .mob3{
+        grid-row: 5/6;
+    }
+
+    .mob4{
+        grid-row: 7/8;
+    }
+
+    .mob5{
+        grid-row: 9/10;
+    }
+
 
     .nav-item{
         display: none;
     }
 
     .logo{
-        grid-column: 7;
+        grid-column: 11;
     }
  
 }
