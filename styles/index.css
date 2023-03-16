@@ -3,7 +3,6 @@
 body{
     padding: 0;
     box-sizing: border-box;
-    height: 800px;
     margin: 0 auto;
     display: grid;
     justify-items: center;
